@@ -5,7 +5,7 @@ const router = createRouter({
   history: createWebHistory('/nbozoglu.project.github.io/'),
   routes: [
     {
-      path: "/",
+      path: "/nbozoglu.project.github.io",
       name: "home",
       component: HomeView,
     },
