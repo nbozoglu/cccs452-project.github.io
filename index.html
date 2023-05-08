@@ -7,13 +7,44 @@
     <title>Türkü TV</title>
   </head>
   <body>
-    <h4>Fox</h4>
+<!--     <h4>Fox</h4>
 	  <video width="1068" height="597" controls>
       <source src="https://foxtv.blutv.com/blutv_foxtv_live/live.m3u8" type="application/x-mpegURL">
     </video>
     <h4>Halk </h4>
     <video width="1068" height="597" controls>
       <source src="https://halktv.blutv.com/blutv_halktv_live/live.m3u8" type="application/x-mpegURL">
-    </video>
+    </video> -->
+	  
+	    <body>
+   <h1>Fox</h1>
+   <video-js id="my_video_1" class="vjs-default-skin" controls preload="auto" width="640" height="268">
+    <source src="https://foxtv.blutv.com/blutv_foxtv_live/live.m3u8" type="application/x-mpegURL">
+   </video-js>
+
+   <!--This is for Video.js by itself -->
+   <script src="https://unpkg.com/video.js/dist/video.js"></script>
+   <!--This is for HLS compatibility with all major browsers-->
+   <script src = "https://unpkg.com/browse/@videojs/http-streaming@1.13.3/dist/videojs-http-streaming.min.js"></script>
+   <script>
+    var player = videojs('my_video_1');
+   </script>
+
+
+
+   <h1>Halk</h1>
+   <video-js id="my_video_2" class="vjs-default-skin" controls preload="auto" width="640" height="268">
+    <source src="https://halktv.blutv.com/blutv_halktv_live/live.m3u8" type="application/x-mpegURL">
+   </video-js>
+
+      <!--This is for Video.js by itself -->
+   <script src="https://unpkg.com/video.js/dist/video.js"></script>
+   <!--This is for HLS compatibility with all major browsers-->
+   <script src = "https://unpkg.com/browse/@videojs/http-streaming@1.13.3/dist/videojs-http-streaming.min.js"></script>
+   <script>
+    var player = videojs('my_video_2');
+   </script>
+
+  </body>
   </body>
 </html>
